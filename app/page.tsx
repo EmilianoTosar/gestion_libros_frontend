@@ -1,4 +1,4 @@
-import { getAllBooks, getFilteredBooks, getFilteredCount } from '@/lib/api';
+import { getFilteredCount } from '@/lib/api';
 import Pagination from './components/pagination';
 import Search from './components/search';
 import List from './components/list';

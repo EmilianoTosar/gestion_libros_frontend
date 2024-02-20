@@ -63,10 +63,9 @@ export default async function BookPage({
 										Borrar
 										<TrashIcon className='w-4 ml-2' />
 									</Link>
-									{showModal &&
-										<DeleteModal id={libro.id} title={libro.title}>
-											
-									</DeleteModal>}
+									{showModal && (
+										<DeleteModal id={libro.id} title={libro.title} />
+									)}
 								</div>
 							</div>
 						</div>
@@ -74,14 +73,13 @@ export default async function BookPage({
 							<h2 className='text-2xl font-bold text-gray-800 dark:text-white'>
 								{libro.title}
 							</h2>
-							<div className="flex justify-between">
-							<span className='font-bold text-xl text-gray-700 dark:text-gray-300 flex-shrink-0'>
-								{libro.author}
-							</span>
-							<span className='font-bold text-gray-700 dark:text-gray-300 flex-shrink-0'>
-								{genre}
-							</span>
-
+							<div className='flex justify-between'>
+								<span className='font-bold text-xl text-gray-700 dark:text-gray-300 flex-shrink-0'>
+									{libro.author}
+								</span>
+								<span className='font-bold text-gray-700 dark:text-gray-300 flex-shrink-0'>
+									{genre}
+								</span>
 							</div>
 							<div className='flex my-4'>
 								<div className='flex flex-col mr-4'>
